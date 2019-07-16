@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name></display-name>
+  <filter>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>com.filter.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>EncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>DengluServlet</servlet-name>
+    <servlet-class>com.servlet.DengluServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ZhuceServlet</servlet-name>
+    <servlet-class>com.servlet.ZhuceServlet</servlet-class>
+  </servlet>
+    <servlet>
+        <servlet-name>ZhuceServlet2</servlet-name>
+        <servlet-class>com.servlet.ZhuceServlet2</servlet-class>
+    </servlet>
+  <servlet>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>com.servlet.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>com.servlet.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>departmentaddServlet</servlet-name>
+    <servlet-class>com.servlet.departmentaddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>departmentUpdateServlet</servlet-name>
+    <servlet-class>com.servlet.departmentUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>departmentDeleteServlet</servlet-name>
+    <servlet-class>com.servlet.departmentDeleteServlet</servlet-class>
+  </servlet>
+   <servlet>
+       <servlet-name>registServlet</servlet-name>
+       <servlet-class>com.servlet.registServlet</servlet-class>
+   </servlet>
+  
+ <!--  离职员工 -->
+  <servlet>
+    <servlet-name>turnover_employeeUpdateServlet</servlet-name>
+    <servlet-class>com.servlet.turnover_employeeUpdateServlet</servlet-class>
+  </servlet><servlet>
+    <servlet-name>turnover_employeeAddServlet</servlet-name>
+    <servlet-class>com.servlet.turnover_employeeAddServlet</servlet-class>
+  </servlet><servlet>
+    <servlet-name>DeleteturnoverServlet</servlet-name>
+    <servlet-class>com.servlet.DeleteturnoverServlet</servlet-class>
+  </servlet>
+  <!--  离职员工 -->
+  
+<!--   部门 -->
+<servlet>
+    <servlet-name>stationaddServlet</servlet-name>
+    <servlet-class>com.servlet.stationaddServlet</servlet-class>
+  </servlet><servlet>
+    <servlet-name>stationDeleteServlet</servlet-name>
+    <servlet-class>com.servlet.stationDeleteServlet</servlet-class>
+  </servlet><servlet>
+    <servlet-name>stationUpdateServlet</servlet-name>
+    <servlet-class>com.servlet.stationUpdateServlet</servlet-class>
+  </servlet>
+<!--   部门 -->
+
+  
+  
+  <servlet-mapping>
+    <servlet-name>DengluServlet</servlet-name>
+    <url-pattern>/DengluServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ZhuceServlet</servlet-name>
+    <url-pattern>/ZhuceServlet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ZhuceServlet2</servlet-name>
+        <url-pattern>/ZhuceServlet2</url-pattern>
+    </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>registServlet</servlet-name>
+    <url-pattern>/registServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/DeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/UpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>departmentaddServlet</servlet-name>
+    <url-pattern>/departmentaddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>departmentUpdateServlet</servlet-name>
+    <url-pattern>/departmentUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>departmentDeleteServlet</servlet-name>
+    <url-pattern>/departmentDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <!--  岗位调动 -->
+  
+  <!--  离职员工 -->
+  <servlet-mapping>
+    <servlet-name>turnover_employeeUpdateServlet</servlet-name>
+    <url-pattern>/turnover_employeeUpdateServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>turnover_employeeAddServlet</servlet-name>
+    <url-pattern>/turnover_employeeAddServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>DeleteturnoverServlet</servlet-name>
+    <url-pattern>/DeleteturnoverServlet</url-pattern>
+  </servlet-mapping>
+  <!--  离职员工 -->
+  
+  <!--   部门 -->
+  <servlet-mapping>
+    <servlet-name>stationaddServlet</servlet-name>
+    <url-pattern>/stationaddServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>stationDeleteServlet</servlet-name>
+    <url-pattern>/stationDeleteServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>stationUpdateServlet</servlet-name>
+    <url-pattern>/stationUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <!--   部门 -->
+  
+  
+  
+  
+  <welcome-file-list>
+    <welcome-file>/indexs.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
